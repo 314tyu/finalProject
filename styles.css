@@ -1,0 +1,60 @@
+main {
+    width: 1000px;
+    height: 700px;
+    background: grey;
+    background-image: linear-gradient(90deg, lightgrey, white, lightgrey);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftSidebar {
+    height: 400px;
+    width: 40px;
+    background: white;
+    background-image: linear-gradient(white, rgb(233, 233, 233));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rightSidebar {
+    height: 400px;
+    width: 40px;
+    background: white;
+    background-image: linear-gradient(white, rgb(233, 233, 233));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 28px;
+    width: 18px;
+    background: url(arrow.svg);
+    background-size: 18px 28px;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+#rightButton {
+    transform: rotate(180deg);
+}
+
+#picArea {
+    height: 400px;
+    width: 700px;
+}
+
+img {
+    height: 400px;
+    width: 700px;
+    object-fit: cover;
+}
+
+
