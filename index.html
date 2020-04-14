@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <main>
-<div id="leftSidebar"><button id="leftButton"></button></div>
-<div id="picArea"><img src="img/moon.jpeg" width="700"></div>
-<div id="rightSidebar"><button id="rightButton"></button></div>
+        <section>
+            <div id="leftSidebar"><button id="leftButton"></button></div>
+            <div id="photoArea">
+                <img id="photo" src="" height=auto>
+                <div class="description">
+                    <h1 id="pTitle"></h1>
+                    <p id="pDescription"></p>
+                </div>
+            </div>
+            <div id="rightSidebar"><button id="rightButton"></button></div>
+        </section>
     </main>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./scripts.js"></script>
 </body>
+
 </html>
