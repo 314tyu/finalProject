@@ -1,7 +1,7 @@
 let photos = [{
     photo: './img/eggs.jpeg',
     pTitle: 'Tojások',
-    pDescription: 'Tojáshélyakon járok, ezt már az elején tudtam, hogy nem lesz könnyű...'
+    pDescription: 'Tojáshélyakon járok; ezt már az elején tudtam, hogy nem lesz könnyű...'
 }, {
     photo: './img/hard_work.jpeg',
     pTitle: 'Az út a cél',
@@ -12,7 +12,7 @@ let photos = [{
     pDescription: 'Telihold előtt mindig feltöltődöm energiával, olyan vagyok olyankor mint egy lelőhetetlen bagoly'
 }];
 
-let currentPhoto = 2;
+let currentPhoto = 0;
 
 $('#photo').attr('src', photos[currentPhoto].photo);
 $('#pTitle').text(photos[currentPhoto].pTitle);

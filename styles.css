@@ -65,18 +65,29 @@ img {
     position : relative;
 }
 
-/*#photo-title, #photo-description {
-    display: block;
-}*/
-
 .description {
     position: absolute;
-    background: rgba(169, 169, 169, 0.6);
+    display: block;
+    background: rgba(70, 70, 70, 0.6);
     width: 100%;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, 50%);
+    bottom: 0;
+    left: 0;
 }
+
+#pTitle {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding-left: 10px;
+}
+
+#pDescription {
+    display: block;
+    font-family: 'Gentium Book Basic', serif;
+    color: rgb(231, 231, 231);
+    padding-left: 10px;
+}
+
 
 
 
