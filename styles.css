@@ -13,6 +13,7 @@ section {
     height: 400px;
     display: flex;
     background-color: white;
+    box-shadow:         3px 3px 10px 2px rgb(150, 150, 150);
 }
 
 #leftSidebar {
@@ -36,35 +37,33 @@ section {
 }
 
 button {
-    height: 28px;
-    width: 18px;
-    background: url(arrow.svg);
-    background-size: 18px 28px;
+    height: 30px;
+    width: 20px;
+    background: url(arrow.svg) no-repeat top left;
+    background-size: contain;
     border: none;
+    cursor: pointer;
 }
 
 button:hover {
     opacity: 0.5;
 }
 
-button:active {
-    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2),
-    inset 0 1.5em 1em rgba(0, 0, 0, 0.3);
-  }
+button:focus {
+    outline: 0;
+}
 
 #rightButton {
     transform: rotate(180deg);
-}
-
-img {
-    height: 400px;
-    object-fit: contain;
 }
 
 #photoArea {
     position : relative;
 }
 
+img {
+    height: 400px;
+}
 .description {
     position: absolute;
     display: block;
