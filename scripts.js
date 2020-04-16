@@ -14,10 +14,6 @@ let photos = [{
 
 let currentPhoto = 0;
 
-/*$('#photo').attr('src', photos[currentPhoto].photo);
-$('#pTitle').text(photos[currentPhoto].pTitle);
-$('#pDescription').text(photos[currentPhoto].pDescription);*/
-
 let loadPhoto = (photoNumber) => {
     $('#photo').attr('src', photos[photoNumber].photo);
     $('#pTitle').text(photos[photoNumber].pTitle);
@@ -41,3 +37,33 @@ let loadPhoto = (photoNumber) => {
     }
     loadPhoto(currentPhoto);
   })
+
+  $('#firstThumbnail').click(() => {
+    loadPhoto(0);
+    currentPhoto = 0;
+  })
+
+  $('#secondThumbnail').click(() => {
+    loadPhoto(1);
+    currentPhoto = 1;
+  })
+
+  $('#thirdThumbnail').click(() => {
+    loadPhoto(2);
+    currentPhoto = 2;
+  })
+
+
+/*let data = ["first", "second", "third"];
+
+data.forEach((item, index) => {
+  $('#container').append(`<div class="box" data-index="${index}">${item} (data-index="${index}")</div>`);
+  $('.box').click((event) => {
+    let indexClicked = $(event.target).attr('data-index');
+    // indexClicked is now a string! if you need it as a number you have to change it
+    // because for example "1" + 1 is going to be "11" and not 2
+    let numberIndex = parseInt(indexClicked);
+    // now numberIndex is a number
+    $('#clicked').text(data[indexClicked]);
+  });
+});*/

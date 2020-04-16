@@ -5,11 +5,12 @@ main {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 }
 
-section {
+.big {
     height: 400px;
     display: flex;
     background-color: white;
@@ -36,7 +37,7 @@ section {
     align-items: center;
 }
 
-button {
+#leftButton, #rightButton {
     height: 30px;
     width: 20px;
     background: url(arrow.svg) no-repeat top left;
@@ -45,7 +46,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#leftButton:hover, #rightButton:hover {
     opacity: 0.5;
 }
 
@@ -61,7 +62,7 @@ button:focus {
     position : relative;
 }
 
-img {
+#photo {
     height: 400px;
 }
 .description {
@@ -86,6 +87,61 @@ img {
     color: rgb(231, 231, 231);
     padding-left: 10px;
 }
+
+.thumbnails {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:         0px 10px 10px 0px rgb(121, 121, 121);
+}
+
+.thumbnail:hover {
+    box-shadow:         0px 10px 10px 0px rgb(49, 49, 49);
+}
+
+#firstThumbnail {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    background: url(img/eggs.jpeg);
+    background-size: cover;
+    border: solid 5px rgb(200, 200, 200); 
+    cursor: pointer;
+}
+
+#secondThumbnail {
+    width: 100px;
+    height: 100px;
+    background: url(img/hard_work.jpeg);
+    background-size: cover;
+    border: solid 5px rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+#thirdThumbnail {
+    width: 100px;
+    height: 100px;
+    background: url(img/moon.jpeg);
+    background-size: cover;
+    border: solid 5px rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+
+
+
+
 
 
 
