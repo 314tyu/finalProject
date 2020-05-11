@@ -13,7 +13,6 @@ main {
 .big {
     height: 400px;
     display: flex;
-    background-color: white;
     box-shadow:         3px 3px 10px 2px rgb(150, 150, 150);
 }
 
@@ -60,11 +59,14 @@ button:focus {
 
 #photoArea {
     position : relative;
+    width: 600px;
+    text-align: center;
 }
 
 #photo {
     height: 400px;
 }
+
 .description {
     position: absolute;
     display: block;
@@ -90,56 +92,26 @@ button:focus {
 
 .thumbnails {
     position: absolute;
-    width: 400px;
     height: 100px;
     bottom: 25px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .thumbnail {
     width: 100px;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow:         0px 10px 10px 0px rgb(121, 121, 121);
+    margin: 0 20px 0 20px;
+    padding: 0;
+    box-shadow: 0px 10px 10px 0px rgb(121, 121, 121);
+    border: solid 5px rgb(200, 200, 200); 
+    cursor: pointer;
+    background-size: cover;
     position: relative;
 }
 
 .thumbnail:hover {
     box-shadow:         0px 10px 10px 0px rgb(49, 49, 49);
-}
-
-#firstThumbnail {
-    width: 100px;
-    height: 100px;
-    padding: 0;
-    background: url(img/eggs.jpeg);
-    background-size: cover;
-    border: solid 5px rgb(200, 200, 200); 
-    cursor: pointer;
-    position: relative;
-}
-
-#secondThumbnail {
-    width: 100px;
-    height: 100px;
-    background: url(img/hard_work.jpeg);
-    background-size: cover;
-    border: solid 5px rgb(200, 200, 200);
-    cursor: pointer;
-    position: relative;
-}
-
-#thirdThumbnail {
-    width: 100px;
-    height: 100px;
-    background: url(img/moon.jpeg);
-    background-size: cover;
-    border: solid 5px rgb(200, 200, 200);
-    cursor: pointer;
-    position: relative;
 }
 
 .thumbnail:after
@@ -153,7 +125,7 @@ button:focus {
    border-radius: 10px;
    content: 'A';
    display: none;
-   top: -30px;
+   top: -35px;
    left: -11px;
    color: white;
    text-align: center;
@@ -171,7 +143,7 @@ button:focus {
     border-color: #000000 transparent;
     width: 0;
     display: none;
-    top: -5px;
+    top: -10px;
     left: 45px;
     z-index: 3;
     
@@ -191,7 +163,7 @@ button:focus {
     border-right: 15px solid transparent;
     border-bottom: 15px solid rgb(200, 200, 200);
     top: -20px;
-    display: none;
+    /* display: none; */
     left: 30px;
     z-index: 2;
 }
@@ -205,7 +177,7 @@ button:focus {
     border-right: 15px solid transparent;
     border-bottom: 15px solid rgb(200, 200, 200);
     top: -20px;
-    /*display: none;*/
+    display: none;
     left: 30px;
     z-index: 2;
 }
